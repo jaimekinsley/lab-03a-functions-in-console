@@ -8,13 +8,12 @@ const Louie = {name: 'Louie', age: 12, weight: 35, color: 'black'}
 const dogs = [KC, Kaya, Elle, Layla, Wicket, Louie];
 
 
-for(let i = 0; i < dogs.length; i++) {
+function logOutThings(){
+  console.log('Here are your', dogs.length, 'things!'); 
+  for(let i = 0; i < dogs.length; i++) {
     const dog = dogs[i];
     console.log('dog at index', i, dog);
-}
-
-function logOutThings(){
-  console.log('Here are your', dogs.length, 'things!');  
+} 
 } 
 
 logOutThings();
